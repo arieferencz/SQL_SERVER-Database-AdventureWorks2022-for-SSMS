@@ -1,42 +1,82 @@
-#**Step-by-step instructions to upload the latest version for Microsoft's sample database "AdventureWorks" into SSMS (SQL Server Management Studio)**#
-============================================================================================
+# Uploading steps for database AdventureWorks2022 into SSMS (SQL Server Management Studio)
 
-##Step #1: AdventureWorks sample databases website##
-Click the link below to reach Microsoft's website that provides direct links for downloading AdventureWorks sample databases and instructions for restoring them to your database.
-https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files
+This file contains the step-by-step instructions to download and restore the **AdventureWorks2022** database into SQL Server Management Studio (SSMS).
 
-##Step #2: "Download backup files"##
-Scroll down to section **"Download backup files"** to download the desired version of the sample database "AdventureWorks".
+---
 
-2) Below link directs to Microsoft's website that offers their "AdventureWorks sample databases":
-https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files
+## 🔗 Useful links
 
+| Description | Link |
+|---|---|
+| Official restore instructions from Microsoft | [AdventureWorks install and configure](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms) |
+| Direct download page for AdventureWorks backup files | [Download backup files](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files) |
 
-For this SQL Server portfolio I used the database AdventureWorks2022, which I uploaded into SSMS using the OLTP link "AdventureWorks2022.bak".
+---
 
-Below are the instructions I followed using the information for restoring database AdventureWorks2022 under tab "SQL Server Management Studio (SSMS).
-  Restore to SQL Server > Tab "SQL Server Management Studio (SSMS):
+## 📥 Step 1 — Download the backup file
 
-1) Download the appropriate .bak file directly from Microsoft's website using the below link.
-Path to download backup files: https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files
+1. Go to the Microsoft download page using the link above
+2. Under the **OLTP** section, download the file named **`AdventureWorks2022.bak`**
 
+---
 
+## 📁 Step 2 — Move the file to your SQL Server backup folder
 
+Move the downloaded `.bak` file from your **Downloads** folder to your SQL Server backup location.
 
-2) Move the .bak file to your SQL Server backup location.
-I moved this file from the folder Downloads to folder C:\SQL Server Management Studio
+For example:
+```
+C:\SQL Server Management Studio
+```
 
-3) Open SSMS and connect to your SQL Server instance.
+> **Note:** If you cannot see the file later inside the SSMS wizard, it means SQL Server does not have permission to access that folder. In that case, move the file to a different folder and try again.
 
-4) Right-click Databases in Object Explorer > Restore Database... to launch the Restore Database wizard.
+---
 
-5) Select Device, and then Select the ellipses (...) to choose a device.
+## 🖥️ Step 3 — Open SSMS and connect to your SQL Server instance
 
-6) Select Add and then choose the .bak file you recently moved to the backup location. 
-If you moved your file to this location but you're not able to see it in the wizard, SQL Server or the user signed into SQL Server doesn't have permission to this file in this folder.
+Open **SQL Server Management Studio (SSMS)** and connect to your local SQL Server instance.
 
-7) Select OK to confirm your database backup selection and close the Select backup devices window.
+---
 
-8) Check the Files tab to confirm the Restore as location and file names match your intended location and file names in the Restore Database wizard.
+## 🔄 Step 4 — Launch the Restore Database wizard
 
-9) Select OK to restore your database.
+In the **Object Explorer** panel on the left:
+
+1. Right-click on **Databases**
+2. Select **Restore Database...**
+
+---
+
+## ⚙️ Step 5 — Select your backup file
+
+Inside the Restore Database wizard:
+
+1. Select **Device** as the source
+2. Click the **`...`** (ellipsis) button to choose a device
+3. Click **Add**
+4. Navigate to the folder where you saved the `.bak` file
+5. Select **`AdventureWorks2022.bak`**
+6. Click **OK** to close the "Select backup devices" window
+
+---
+
+## ✅ Step 6 — Verify the file locations
+
+1. Click the **Files** tab inside the wizard
+2. Confirm that the **Restore as** location and file names match your intended folder
+3. Adjust the paths if needed
+
+---
+
+## 🚀 Step 7 — Restore the database
+
+Click **OK** to start the restore process.
+
+When complete, you will see a confirmation message and the database **AdventureWorks2022** will appear under **Databases** in your Object Explorer.
+
+---
+
+## 🔗 Back to repository
+
+[← Back to SQL_SERVER-Database-AdventureWorks2022-for-SSMS](https://github.com/arieferencz/SQL_SERVER-Database-AdventureWorks2022-for-SSMS)
