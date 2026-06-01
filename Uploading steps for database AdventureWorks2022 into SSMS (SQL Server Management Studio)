@@ -1,5 +1,7 @@
-  Uploading steps for database AdventureWorks2022 into SSMS (SQL Server Management Studio)
+#Step-by-step instructions to upload the latest version for Microsoft's sample database "AdventureWorks" into SSMS (SQL Server Management Studio)#
 ============================================================================================
+
+Step #1: AdventureWorks sample databases website:
 
 1) The step-by-step instructions to restore this database for SSMS can be found on Microsoft's website using the below link:
 https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms
