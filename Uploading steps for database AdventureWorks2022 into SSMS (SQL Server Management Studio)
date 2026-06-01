@@ -16,6 +16,9 @@ Below are the instructions I followed using the information for restoring databa
 1) Download the appropriate .bak file directly from Microsoft's website using the below link.
 Path to download backup files: https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files
 
+
+
+
 2) Move the .bak file to your SQL Server backup location.
 I moved this file from the folder Downloads to folder C:\SQL Server Management Studio
 
