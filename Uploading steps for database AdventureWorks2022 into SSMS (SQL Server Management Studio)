@@ -1,10 +1,12 @@
 #**Step-by-step instructions to upload the latest version for Microsoft's sample database "AdventureWorks" into SSMS (SQL Server Management Studio)**#
 ============================================================================================
 
-Step #1: AdventureWorks sample databases website:
+##Step #1: AdventureWorks sample databases website##
+Click the link below to reach Microsoft's website that provides direct links for downloading AdventureWorks sample databases and instructions for restoring them to your database.
+https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files
 
-1) The step-by-step instructions to restore this database for SSMS can be found on Microsoft's website using the below link:
-https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms
+##Step #2: "Download backup files"##
+Scroll down to section **"Download backup files"** to download the desired version of the sample database "AdventureWorks".
 
 2) Below link directs to Microsoft's website that offers their "AdventureWorks sample databases":
 https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files
