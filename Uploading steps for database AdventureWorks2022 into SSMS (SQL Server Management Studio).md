@@ -57,7 +57,8 @@ Inside the Restore Database wizard:
 3. Click **Add**
 4. Navigate to the folder where you saved the `.bak` file
 5. Select **`AdventureWorks2022.bak`**
-6. Click **OK** to close the "Select backup devices" window
+6. Click OK to close the "Backup File location" window
+7. Click **OK** to close the "Select backup devices" window
 
 ---
 
