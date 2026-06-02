@@ -10,7 +10,7 @@ It serves as the data foundation for all T-SQL exercises in this portfolio.
 
 | File | Description |
 |---|---|
-| [Uploading steps for database AdventureWorks2022 into SSMS](https://github.com/arieferencz/SQL_SERVER-Database-AdventureWorks2022-for-SSMS/blob/main/Uploading%20steps%20for%20database%20AdventureWorks2022%20into%20SSMS%20(SQL%20Server%20Management%20Studio)) | Complete instructions to download the `.bak` file from Microsoft and restore it into SSMS |
+| [Uploading steps for database AdventureWorks2022 into SSMS](https://github.com/arieferencz/SQL_SERVER-Database-AdventureWorks2022-for-SSMS/blob/main/Uploading%20steps%20for%20database%20AdventureWorks2022%20into%20SSMS%20(SQL%20Server%20Management%20Studio).md) | Complete instructions to download the `.bak` file from Microsoft and restore it into SSMS |
 
 ---
 
